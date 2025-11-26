@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grill and Chill - Premium BBQ & Dining</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🔥 Grill & Chill</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Grill & Chill</h2>
+            <p>Experience the finest BBQ and grilled delicacies in town</p>
+            <button class="cta-button" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">
+                View Menu
+            </button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <!-- Grilled Chicken -->
+                <div class="menu-item">
+                    <div class="item-icon">🍗</div>
+                    <h3>Grilled Chicken</h3>
+                    <p>Marinated in our secret spice blend and grilled to perfection</p>
+                    <span class="price">$12.99</span>
+                </div>
+
+                <!-- BBQ Ribs -->
+                <div class="menu-item">
+                    <div class="item-icon">🍖</div>
+                    <h3>BBQ Ribs</h3>
+                    <p>Fall-off-the-bone tender ribs with our signature BBQ sauce</p>
+                    <span class="price">$14.99</span>
+                </div>
+
+                <!-- Grilled Steak -->
+                <div class="menu-item">
+                    <div class="item-icon">🥩</div>
+                    <h3>Grilled Steak</h3>
+                    <p>Premium cut steak grilled medium-rare, perfectly seasoned</p>
+                    <span class="price">$18.99</span>
+                </div>
+
+                <!-- Seafood Platter -->
+                <div class="menu-item">
+                    <div class="item-icon">🦞</div>
+                    <h3>Seafood Platter</h3>
+                    <p>Fresh fish, shrimp, and lobster grilled with herbs</p>
+                    <span class="price">$19.99</span>
+                </div>
+
+                <!-- Grilled Vegetables -->
+                <div class="menu-item">
+                    <div class="item-icon">🥗</div>
+                    <h3>Grilled Vegetables</h3>
+                    <p>Seasonal vegetables grilled with olive oil and herbs</p>
+                    <span class="price">$8.99</span>
+                </div>
+
+                <!-- Combo Platter -->
+                <div class="menu-item">
+                    <div class="item-icon">🍽️</div>
+                    <h3>Combo Platter</h3>
+                    <p>Perfect mix of chicken, ribs, and grilled veggies</p>
+                    <span class="price">$22.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Grill & Chill has been serving the community since 2015 with authentic grilled cuisine. Our passion is creating memorable dining experiences with premium ingredients and traditional grilling techniques.</p>
+                    <ul class="features">
+                        <li>✓ Premium Quality Ingredients</li>
+                        <li>✓ Expert Grilling Techniques</li>
+                        <li>✓ Cozy Atmosphere</li>
+                        <li>✓ Fast & Friendly Service</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder">🔥🍖🔥</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>📍 Location</h3>
+                    <p>123 Grill Lane<br>Foodville, CA 90210</p>
+                </div>
+                <div class="contact-info">
+                    <h3>📞 Phone</h3>
+                    <p>(555) 123-4567<br>Mon-Sun: 11AM - 10PM</p>
+                </div>
+                <div class="contact-info">
+                    <h3>✉️ Email</h3>
+                    <p>info@grillandchill.com<br>reservations@grillandchill.com</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Grill & Chill. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
