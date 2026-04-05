@@ -4,7 +4,7 @@ const RESTAURANT = {
   displayPhone: "89803 56776",
   email: "grillandchill4321@gmail.com",
   instagram: "https://www.instagram.com/grill.and.chill_/",
-  mapsLink: "https://www.google.com/maps/place/Grill+%26+Chill/@21.146208,72.759325",
+  mapsLink: "https://www.google.com/maps/place/Grill+%26+Chill/@21.1582976,72.770642,14z/data=!4m6!3m5!1s0x3be0527f87e48501:0xcce1104d05e07735!8m2!3d21.146208!4d72.759325!16s%2Fg%2F11c6t0k6d4?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D",
   location: "Surat",
   address: "Besides dumas resort, near V R mall circle, new magdalla road, Magdalla, Surat, Gujarat 395007",
   timings: "11 AM – 11 PM (Everyday)",
