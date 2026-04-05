@@ -50,6 +50,14 @@ function applyRestaurantConfig() {
   });
   document.querySelectorAll('[data-restaurant-link="maps"]').forEach(anchor => {
     anchor.href = RESTAURANT.mapsLink;
+    anchor.target = "_blank";
+    anchor.rel = "noopener noreferrer";
+
+    if (anchor.dataset.overrideText) {
+      anchor.textContent = anchor.dataset.overrideText;
+    } else if (/^view location$/i.test(anchor.textContent.trim()) || anchor.textContent.trim() === "") {
+      anchor.textContent = "View Location";
+    }
   });
   document.querySelectorAll('[data-restaurant-text="timings"]').forEach(el => {
     el.textContent = RESTAURANT.timings;
