@@ -63,3 +63,9 @@
 .crop-family {
   object-position: center center;
 }
+
+.active-nav-link {
+  color: #FFB3AC;
+  font-weight: 700;
+}
+

@@ -2,9 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.sticky button');
   const sections = document.querySelectorAll('section[data-category]');
 
-  if (!buttons.length || !sections.length) {
-    return;
-  }
+  if (buttons.length && sections.length) {
 
   sections.forEach(section => {
     section.style.display = section.dataset.category === 'chinese' ? 'block' : 'none';
@@ -51,4 +49,25 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+  function highlightActiveNavbarLink() {
+    const navLinks = document.querySelectorAll('nav a[href]');
+    if (!navLinks.length) return;
+
+    const currentPage = location.pathname.split('/').pop() || 'home.html';
+    const normalizedPage = currentPage === '' ? 'home.html' : currentPage;
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href')?.split('#')[0] || '';
+      const linkPage = href.split('/').pop() || '';
+
+      if (linkPage === normalizedPage) {
+        link.classList.add('active-nav-link');
+      } else {
+        link.classList.remove('active-nav-link');
+      }
+    });
+  }
+
+  highlightActiveNavbarLink();
 });
